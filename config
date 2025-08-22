@@ -1,0 +1,58 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+    "modules-left": ["custom/launcher"],
+    "modules-center": [],
+    "modules-right": ["custom/bluetooth", "network", "pulseaudio", "clock", "hyprland/workspaces", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "", "2": "", "3": "", "4": "",
+            "active": "", "default": ""
+        },
+        "persistent-workspaces": { "1": [], "2": [], "3": [], "4": [] },
+        "on-click": "activate"
+    },
+
+    "custom/launcher": {
+        "format": "󰍉",
+        "tooltip-format": "Run Application",
+        "on-click": "wofi --show drun"
+    },
+
+    "custom/bluetooth": {
+        "format": "",
+        "tooltip-format": "Manage Bluetooth",
+        "on-click": "blueman-manager"
+    },
+
+    "network": {
+        "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈁 Connected",
+        "format-disconnected": "󰖪 Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": " Muted",
+        "format-icons": { "default": ["", "", ""] },
+        "on-click": "pavucontrol"
+    },
+
+    "clock": {
+        "format": " {:%a %b %d  %I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "timezone": "America/Chicago"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    }
+}

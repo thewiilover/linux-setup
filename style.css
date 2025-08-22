@@ -1,0 +1,87 @@
+/* ~/.config/waybar/style.css */
+* {
+    border: none;
+    border-radius: 0;
+    /* Use a Nerd Font that you have installed */
+    font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(30, 30, 45, 0.9);
+    color: #cdd6f4; /* Light text */
+}
+
+#workspaces button {
+    padding: 0 10px;
+    background-color: transparent;
+    color: #89b4fa; /* Blue */
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #a6e3a1; /* Green */
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    border-bottom: 2px solid #f38ba8; /* Red */
+    color: #f38ba8;
+}
+
+#custom-launcher {
+    padding: 0 15px;
+    margin-left: 5px;
+    color: #a6e3a1; /* Green */
+    background-color: #1e1e2e;
+    border-radius: 5px 0 0 5px;
+}
+
+#custom-launcher:hover,
+#custom-bluetooth:hover {
+    background-color: #45475a;
+}
+
+#custom-bluetooth {
+    padding: 0 10px;
+    color: #89b4fa; /* Blue */
+}
+
+#network {
+    padding: 0 10px;
+    color: #89b4fa; /* Blue */
+}
+
+#network.disconnected {
+    color: #f38ba8; /* Red */
+}
+
+#pulseaudio {
+    padding: 0 10px;
+    color: #cba6f7; /* Mauve */
+}
+
+#pulseaudio.muted {
+    color: #6c7086; /* Grey */
+}
+
+#clock {
+    padding: 0 10px;
+    color: #fab387; /* Orange */
+}
+
+#tray {
+    padding: 0 10px;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border: 1px solid #45475a;
+    border-radius: 4px;
+}
+
+tooltip label {
+    color: #cdd6f4;
+}
