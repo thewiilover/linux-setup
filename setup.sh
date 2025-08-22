@@ -1,4 +1,4 @@
-! /bin/sh
+# /bin/sh
 # used for setting up any  new arch linux install for me
 # Step 1. install packages used by my hyprland config
 sudo pacman -S hyprland waybar kitty dolphin wofi swaybg hyfetch networkmanager network-manager-applet dunst pavucontrol brightnessctl pulseaudio pulseaudio-alsa playerctl blueman ttf-jetbrains-mono-nerd qt5ct xdg-desktop-portal-hyprland wl-clipboard grim slurp firefox zsh discord steam
