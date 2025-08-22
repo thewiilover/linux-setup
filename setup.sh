@@ -1,7 +1,7 @@
 # /bin/sh
 # used for setting up any  new arch linux install for me
 # Step 1. install packages used by my hyprland config
-sudo pacman -S hyprland waybar kitty dolphin wofi swaybg hyfetch networkmanager network-manager-applet dunst pavucontrol brightnessctl pulseaudio pulseaudio-alsa playerctl blueman ttf-jetbrains-mono-nerd qt5ct xdg-desktop-portal-hyprland wl-clipboard grim slurp firefox zsh discord steam
+sudo pacman -S hyprland waybar kitty dolphin wofi swaybg hyfetch networkmanager network-manager-applet dunst pavucontrol brightnessctl pulseaudio pulseaudio-alsa playerctl blueman ttf-jetbrains-mono-nerd qt5ct xdg-desktop-portal-hyprland wl-clipboard grim slurp 
 
 # Step 2. copy config files to directories
 mkdir /home/wii/.config/waybar
@@ -21,3 +21,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 echo "remember to switch theme to agnoster"
 
+#Step 5. install misc packages
+sudo pacman -S firefox zsh discord steam
